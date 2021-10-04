@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "New COVID cases by region",
+    "subtitle": "Daily data using an API",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=ltla&metric=newCasesBySpecimenDate&format=csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "areaName",
+        "oneOf": ["Mid Devon", "Cardiff", "Oxford"]
+      }
+    }
+  ],
+  "height": 300,
+  "width": 300,
+  "mark": {"type": "line", "point": false},
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "newCasesBySpecimenDate",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": false}
+    },
+    "color": {
+      "field": "areaName",
+      "type": "nominal",
+      "scale": {"scheme": "inferno"},
+      "title": "Region key",
+      "legend": {"orient": "top-left", "fillColor": "#FcFdFd"}
+    }
+  },
+  "config": {}
+}
