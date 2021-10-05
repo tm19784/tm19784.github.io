@@ -5,7 +5,7 @@ p {
 	color: #323232;
 }
 
-h1 {
+.h1 {
 	font-family: "Catamaran";
 	font-variant: small-caps;
 	font-size: 60px;
@@ -15,7 +15,7 @@ h1 {
 	margin: 0px 0px 30px 0px  ;
 	height: 40px;
 }
-h2 {
+.h2 {
 	font-family: "Heebo";
 	font-size: 16px;
 	color: #2d3033;
