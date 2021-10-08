@@ -1,28 +1,37 @@
 body {
-        color: white
-	background-color: green;	
-}
-
-p {
-	font-size: 18px;
-	margin: 5px 5px;
-	line-height: 22.4px;
-	color: #323232;
+    background-color: #66CDAA;
+    font-family: "Times New Roman", Times, serif;
+    color: #F0F8FF;
+    border: black solid 3.5px;
+    margin: 40px;
 }
 
 h1 {
-	font-family: "Catamaran";
-	font-variant: small-caps;
-	font-size: 60px;
-	color: #320064;
-	font-weight: "bold";
-	font-kerning: 50;
-	height: 40px;
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 3.5px;
 }
+
 h2 {
-	font-family: "Heebo";
-	font-size: 16px;
-	color: #2d3033;
-	margin: 0;
-	font-weight: 1000;
+    text-align: center;
+}	
+
+#span1 {
+    font-weight: bold;
 }
+
+#headerdiv {
+    text-align: center;
+}
+
+.chart {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+    border: #4B0082 solid 3.5px;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 7px;
+    background-color: white;
+}
+
+
