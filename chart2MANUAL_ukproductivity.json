@@ -4,7 +4,7 @@
     "description": "Productivity UK",
   
      "title": {
-      "text": "UK productivity, 1971-1975 (coded manually using raw values)",
+      "text": "UK productivity, 1971-1975 (manually coded; raw values)",
       "subtitle":"Labour productivity. Output per hour worked, 2018==100. Source: ONS",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
