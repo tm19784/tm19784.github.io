@@ -1,0 +1,53 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  
+    "description": "Productivity UK",
+  
+     "title": {
+      "text": "UK productivity, 1971-1975 (coded manually using raw values)",
+      "subtitle":"Labour productivity. Output per hour worked, 2018==100. Source: ONS",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+    "data":  {
+        	    "values": [
+              {"Date": "1971-01-01", "Value": 42.6}, {"Date": "1971-04-01", "Value": 43.4}, {"Date": "1971-07-01", "Value": 44.2},
+        	      {"Date": "1971-10-01", "Value": 44.5}, {"Date": "1972-01-01", "Value": 44.1}, {"Date": "1972-04-01", "Value": 45},
+        	      {"Date": "1972-07-01", "Value": 45.1}, {"Date": "1972-10-01", "Value": 45.5}, {"Date": "1973-01-01", "Value": 47.3}, 
+                  {"Date": "1973-04-01", "Value": 47.3},{"Date": "1973-07-01", "Value": 46.8}, {"Date": "1973-10-01", "Value": 46.6}, 
+                  {"Date": "1974-01-01", "Value": 45.5}, {"Date": "1974-04-01", "Value": 46.3},{"Date": "1974-07-01", "Value": 46.8}, 
+                  {"Date": "1974-10-01", "Value": 46.2}, {"Date": "1975-01-01", "Value": 46.6}, {"Date": "1975-04-01", "Value": 46.2},
+                  {"Date": "1975-07-01", "Value": 46.2}, {"Date": "1975-10-01", "Value": 47}
+        	    ]
+        	  }, 
+        
+    "height": 300,
+    "width": 345,
+    "mark": {
+      "type": "line",
+      "point": false,
+      "interpolate": "monotone",
+      "color": "blueviolet"
+    },
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "temporal",
+        "axis": {
+          "title": null,
+          "grid": false,
+          "labelSeparation": 20,
+          "ticks": false
+        }
+      },
+      "y": {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "",
+        "axis": {"grid": false}
+      }
+    }
+  }
