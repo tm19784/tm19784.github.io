@@ -36,7 +36,7 @@
         "legend": {"orient": "top-right"},
         "type": "nominal",
         "sort": [],
-        "scale": {"scheme": #paired}
+        "scale": {"scheme": "#paired"}
       },
       "tooltip": [
         {"field": "Year", "type": "temporal", "timeUnit": "year", "title": "Year"},
