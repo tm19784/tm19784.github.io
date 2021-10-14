@@ -32,11 +32,11 @@
       },
       "color": {
         "field": "Country",
-        "title": null,
+        "title": "Country key",
         "legend": {"orient": "top-right"},
         "type": "nominal",
         "sort": [],
-        "scale": {"scheme": "yellowgreenblue"}
+        "scale": {"scheme": #paired}
       },
       "tooltip": [
         {"field": "Year", "type": "temporal", "timeUnit": "year", "title": "Year"},
