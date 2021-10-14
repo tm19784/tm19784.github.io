@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "Drug prevelance over time in G7 countries",
+    "description": "Unemployment rate over time in G7 countries",
   
   "title": {
       "text": "G7 countries' unemployment rate (%) 1998-2019",
