@@ -22,7 +22,7 @@
    
     "encoding": {
         "x": {
-          "field": "date1",
+          "field": "date2",
           "type": "temporal",
           "title": null,
           "axis": {"grid": false}
