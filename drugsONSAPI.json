@@ -22,13 +22,13 @@
    
     "encoding": {
         "x": {
-          "field": "period",
+          "field": "Period",
           "type": "temporal",
           "title": null,
           "axis": {"grid": false}
         },
         "y": {
-          "field": "value",
+          "field": "Value",
           "type": "quantitative",
           "title": null,
           "axis": {"grid": true}
