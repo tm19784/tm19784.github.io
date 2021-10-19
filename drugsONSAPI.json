@@ -14,47 +14,24 @@
       "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/mt5g/dataset/pb/data",
       "format": {"type": "csv"}
     },
-  
-     "transform":[
-        
-        {"filter": {
-          "field": "VARIABLE TO FILTER HERE", 
-          "oneOf": ["X", "Y", "Z"]}
-          }
-  
-  
-      ],
-    
     
     "height": 280,
     "width": 300,
      
-    "mark": {"type": "line", "point": false},
+    "mark": {"type": "bar", "point": false},
    
     "encoding": {
-  
-      "x": {
-        "field": "date",
-        "type": "temporal",
-        "title": null,
-        "axis": {"grid": false}
-      },
-  
-      "y": {
-        "field": "VARIABLE YOU ARE MEASURING HERE",
-        "type": "quantitative",
-        "title": null,
-        "axis": {"grid": false}
-      },
-  
-      "color": {
-        "field": "areaName",
-        "type": "nominal",
-        "scale": {"scheme": "set1"},
-        "title": "LEGEND TITLE",
-        "legend": {
-          "orient": "top-left", 
-          "fillColor": "#FcFdFd"}
-      }
+        "x": {
+          "field": "period",
+          "type": "temporal",
+          "title": null,
+          "axis": {"grid": false}
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": null,
+          "axis": {"grid": true}
+        }
   }
-  }
+}
