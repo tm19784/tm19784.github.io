@@ -18,11 +18,11 @@
     "height": 300,
     "width": 300,
      
-    "mark": {"type": "bar", "point": false},
+    "mark": {"type": "line", "point": false},
    
     "encoding": {
         "x": {
-          "field": "date2",
+          "field": "date",
           "type": "temporal",
           "title": null,
           "axis": {"grid": false}
