@@ -4,7 +4,7 @@
     "description": "Cardano opening price",
   
      "title": {
-      "text": "Cardano (ADA) opening price; 20-01-2021 to present",
+      "text": "Cardano (ADA) opening price (£); 20-01-2021 to present",
       "subtitle":"Data from API using personal API key; Source: CoinAPI.",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
