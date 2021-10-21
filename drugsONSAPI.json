@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     
     "title": {
-      "text": "UK illegal drug smuggling volume",
+      "text": "UK illegal drug smuggling volume (API - slow updates)",
       "subtitle":"Annual estimates; units: millions (£); Source: ONS",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
