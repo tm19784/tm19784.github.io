@@ -29,7 +29,7 @@
         "type": "temporal",
         "axis": {
           "title": null,
-          "grid": false,
+          "grid": true,
           "labelSeparation": 20,
           "ticks": false
         }
