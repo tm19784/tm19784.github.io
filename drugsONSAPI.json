@@ -12,7 +12,7 @@
     
      "data": {
       "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/mt5g/dataset/pb/data",
-      "format": {"type": "csv"}
+      "format": {"type": "json", "property": "years"}
     },
     
     "height": 300,
