@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "data": {"url": "https://app.sportdataapi.com/api/v1/soccer/matches?apikey=b8bb8050-f3d3-11eb-808b-334144de1112&season_id=1980",
+  "data": {"url": "https://app.sportdataapi.com/api/v1/soccer/matches?apikey=24474530-3287-11ec-b7c9-a5c673ddf3f0&season_id=1980",
   "format":{
     "type": "json",
     "property": "data"}},
