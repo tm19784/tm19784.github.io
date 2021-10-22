@@ -12,7 +12,7 @@
     },
   
     "data": {
-        "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/G7%20unemployment%20rates.csv",
+        "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/csvFolder/G7%20unemployment%20rates.csv",
         "format": {"type": "csv"}
       },
     
