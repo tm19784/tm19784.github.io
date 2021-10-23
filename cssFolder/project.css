@@ -1,0 +1,38 @@
+body {
+ /* Richard suggestion that ended up not working... width: 500px */   
+    background-color: ;
+    font-family: ;
+    color: ;
+    border: color solid px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 3.5px;
+}
+
+h2 {
+    text-align: center;
+}	
+
+#span1 {
+    font-weight: bold;
+}
+
+#headerdiv {
+    text-align: center;
+}
+
+.chart {
+    /* Richard suggestion that ended up not working... display: flex; justify-content: center */
+    font-family: ;
+    vertical-align: center;
+    width: 400px;
+    border: #4B0082 solid 3.5px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 8px;
+    background-color: ;
+}
