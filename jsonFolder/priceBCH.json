@@ -6,7 +6,7 @@
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
-    "color": "black"
+    "color": "#17dbb5"
   },
   "data": {
     "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/jsonFolder/data_FRED-CBBCHUSD.json",
@@ -15,7 +15,7 @@
   
   "height": 300,
   "width": 300,
-  "mark": {"type": "line", "point": false},
+  "mark": {"type": "line", "point": false, "color": "aquamarine"},
   "encoding": {
     "x": {
       "field": "date",
