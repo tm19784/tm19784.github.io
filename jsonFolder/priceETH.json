@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Ethereum price (USD) from 18/05/2016 to 25/10/2021",
-    "subtitle": "Daily API values converted into raw data using Python loop",
+    "subtitle": "Daily API values converted into raw data using Python loop; Source: FRED",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
