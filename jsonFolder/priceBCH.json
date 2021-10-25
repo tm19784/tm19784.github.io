@@ -9,7 +9,7 @@
     "color": "black"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/jsonFolder/data_FRED-CBBTCUSD.json",
+    "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/jsonFolder/data_FRED-CBBCHUSD.json",
     "format": {"type": "json"}
   },
   
