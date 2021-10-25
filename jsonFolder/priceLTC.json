@@ -11,7 +11,7 @@
   },
   "data": {
     "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/jsonFolder/data_FRED-CBLTCUSD.json",
-    "format": {"type": "json"}
+    "format": {"type": "json", "property": "observations"}
   },
   
   "height": 300,
