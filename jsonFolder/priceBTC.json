@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Bitcoin price from DATE",
+    "text": "Bitcoin price from 01/12/2014 to 25/10/2021",
     "subtitle": "Daily API values converted into raw data using Python loop",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
@@ -9,7 +9,7 @@
     "color": "black"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/New%20COVID%20cases%20live%20data.csv",
+    "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/jsonFolder/data_FRED-CBBTCUSD.json",
     "format": {"type": "json"}
   },
   
@@ -18,13 +18,13 @@
   "mark": {"type": "line", "point": false},
   "encoding": {
     "x": {
-      "field": "INSERT",
+      "field": "date",
       "type": "temporal",
       "title": null,
       "axis": {"grid": true}
     },
     "y": {
-      "field": "INSERT",
+      "field": "value",
       "type": "quantitative",
       "title": null,
       "axis": {"grid": false}
