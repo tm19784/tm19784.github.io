@@ -18,13 +18,13 @@
   "mark": {"type": "line", "point": false},
   "encoding": {
     "x": {
-      "field": "observations.date",
+      "field": "date",
       "type": "temporal",
       "title": null,
       "axis": {"grid": true}
     },
     "y": {
-      "field": "observations.value",
+      "field": "value",
       "type": "quantitative",
       "title": null,
       "axis": {"grid": false}
