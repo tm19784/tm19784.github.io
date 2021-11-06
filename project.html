@@ -12,7 +12,13 @@
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oliver Krishnamma's Data Science project</title>
+ 
 <link rel="stylesheet" href="cssFolder/projectstyle.css">
+<link rel="icon" type="image/png" href="favicon.png">
 
 </head>
 
@@ -25,12 +31,31 @@
 <body>
  <header>
         <h1> Project question title (cryptocoins and macroeconomy relationship) </h1>
-        <h2> </h2>
-        <div  </div>
+        <h2> Oliver Krishnamma, 2021 </h2>
+        <div The following analysis is purely that of correlation, so is not sufficient for causality. </div>
  </header>
  
   <center>
-    <p> Testing project link... </p>
+    <container class="headercontainer">
+     <div class="multi-button">
+
+     <button onclick="location.href='https://fred.stlouisfed.org/docs/api/fred/'">FRED API information</button
+     <button onclick="location.href='https://www.coinapi.io/'">coinAPI website</button>
+
+     </div>
+    </container>
+   
+   <p> Testing project link... </p>
+   
+  <!--Chart 1 -->
+ 
+  <div class="chart" id="chart14">
+      <script>
+        var myChart14 = "jsonFolder/INSERT";
+        vegaEmbed('#chart14', myChart14);
+      </script>
+  </div>
+   
   </center>
 </body>
 <!-- ///////////////////  END BODY //////////////////////////////////// -->
