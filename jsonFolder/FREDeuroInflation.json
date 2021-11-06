@@ -1,0 +1,51 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "Inflation for Euro area in %",
+    
+  
+    "title": {
+      "text": "Inflation, consumer prices for the Euro Area",
+      "subtitle":"Average over entire area in %; source: FRED",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+    "data": 
+      {
+        "url": "https://api.stlouisfed.org/fred/series/observations?series_id=FPCPITOTLZGEMU&api_key=7dbe05263f2257c084f7ec044350a936&file_type=json",
+        "format":{
+          "type":"json", "property":"observations"
+         }
+      },
+  
+    "height": 300,
+    "width": 300,
+    
+    "mark": {
+      "type": "bar",
+      "color": "#0044ff"
+    },
+    
+    "encoding": {
+    
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "axis": {
+          "title": "Year (observations on 1st of January)",
+          "grid": false,
+          "ticks": false
+        }
+      },
+  
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Inflation in percent",
+        "axis": {"grid": false}
+      }
+    }
+  }
