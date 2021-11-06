@@ -16,9 +16,7 @@
     "data": 
       {
         "url": "https://api.stlouisfed.org/fred/series/observations?series_id=FPCPITOTLZGEMU&api_key=7dbe05263f2257c084f7ec044350a936&file_type=json",
-        "format":{
-          "type":"json", "property":"observations"
-         }
+        "format": {"type": "json", "property": "observations"}
       },
   
     "height": 300,
