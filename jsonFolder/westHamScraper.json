@@ -15,7 +15,7 @@
     
     "data": 
       {
-        "url": "",
+        "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/csvFolder/westHamGoals.csv",
         "format": {"type": "csv"}
       },
   
@@ -43,7 +43,7 @@
         "field": "1",
         "type": "quantitative",
         "title": "Goals scored by West Ham",
-        "axis": {"grid": false}
+        "axis": {"grid": true}
       }
     }
   }
