@@ -24,7 +24,7 @@
     
     "mark": {
       "type": "bar",
-      "color": "#29fff8"
+      "color": "#00d945"
     },
     
     "encoding": {
