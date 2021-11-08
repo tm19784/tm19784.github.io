@@ -15,7 +15,7 @@
     
     "data": 
       {
-        "url": "https://api.stlouisfed.org/fred/series/observations?series_id=FPCPITOTLZGEMU&api_key=7dbe05263f2257c084f7ec044350a936&file_type=json",
+        "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/jsonFolder/FRED_euro_inflation_data.json",
         "format": {"type": "json", "property": "observations"}
       },
   
