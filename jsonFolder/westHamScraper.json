@@ -1,0 +1,49 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "West Ham goals from website scraping",
+    
+  
+    "title": {
+      "text": "Goals scored by West Ham in the Premier League as of 08/11/2021",
+      "subtitle":"Data retrieved from scraper using Python; source: WHUFC",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+    "data": 
+      {
+        "url": "",
+        "format": {"type": "csv"}
+      },
+  
+    "height": 300,
+    "width": 300,
+    
+    "mark": {
+      "type": "bar",
+      "color": "#29fff8"
+    },
+    
+    "encoding": {
+    
+      "x": {
+        "field": "0",
+        "type": "temporal",
+        "axis": {
+          "title": "Date of match",
+          "grid": false,
+          "ticks": false
+        }
+      },
+  
+      "y": {
+        "field": "1",
+        "type": "quantitative",
+        "title": "Goals scored by West Ham",
+        "axis": {"grid": false}
+      }
+    }
+  }
