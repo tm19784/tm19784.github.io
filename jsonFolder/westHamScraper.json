@@ -5,7 +5,7 @@
     
   
     "title": {
-      "text": "Goals scored by West Ham in the Premier League as of 08/11/2021",
+      "text": "West Ham's Premier League goals as of 08/11/2021",
       "subtitle":"Data retrieved from scraper using Python; source: WHUFC",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
@@ -20,7 +20,7 @@
       },
   
     "height": 300,
-    "width": 270,
+    "width": 300,
     
     "mark": {
       "type": "bar",
