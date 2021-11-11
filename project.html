@@ -42,13 +42,14 @@
      <button onclick="location.href='https://fred.stlouisfed.org/docs/api/fred/'">FRED API information</button>
      <button onclick="location.href='https://www.coinapi.io/'">coinAPI website</button>
      <button onclick="location.href='https://datahelp.imf.org/knowledgebase/articles/667681-using-json-restful-web-service'">IMF API information</button>
+     <button onclick="location.href='https://tm19784.github.io/'">Back to the homeworks?</button>
       
      </div>
     </container>
    
    <p class="graphNote"><span style="color: rgb(0, 0, 0);">Inflation has been subsiding in developed countries (such as the Euro area) in recent years.</span></p>
    
-  <!--Chart 1 -->
+  <!--Chart 14 -->
  
   <div class="chart" id="chart14">
       <script>
@@ -57,6 +58,17 @@
       </script>
   </div>
    
+  <p class="graphNote"><span style="color: rgb(0, 0, 0);">However, price inflation for cryptocurrencies specifically has soared over an even shorter period.</span></p> 
+   
+  <!--Chart 15 -->
+ 
+  <div class="chart" id="chart15">
+      <script>
+        var myChart15 = "jsonFolder/top4Crypto.json";
+        vegaEmbed('#chart15', myChart15);
+      </script>
+  </div>
+  
   </center>
 </body>
 <!-- ///////////////////  END BODY //////////////////////////////////// -->
