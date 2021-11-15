@@ -25,28 +25,30 @@
       "color":{"field":"coinName", "title":"Coin key", "legend":{"orient": "top-left"}}
     },
 
-
-
     "layer": [
       
       {"data": {"url": "https://rest.coinapi.io/v1/ohlcv/BTC/GBP/history?period_id=8HRS&time_start=2021-01-20T00:00:00&limit=100000&include_empty_items=false&apikey=1573DA56-C791-474B-B4B5-6A65F1430EF0"},
       "mark": {"type":"line", "color":"#002fff"},
-       "transform": {"calculate": "coinName": "BTC"}
-      },
+       "transform": [
+           {"calculate": "coinName", "as": "BTC"}
+      ],
 
       {"data": {"url": "https://rest.coinapi.io/v1/ohlcv/ETH/GBP/history?period_id=8HRS&time_start=2021-01-20T00:00:00&limit=100000&include_empty_items=false&apikey=1573DA56-C791-474B-B4B5-6A65F1430EF0"},
       "mark": {"type":"line", "color":"#ff00dd"},
-       "transform": {"calculate": "coinName": "ETH"}
-      },
+       "transform": [
+           {"calculate": "coinName", "as": "ETH"}
+      ],
 
       {"data": {"url": "https://rest.coinapi.io/v1/ohlcv/BNB/GBP/history?period_id=8HRS&time_start=2021-01-20T00:00:00&limit=100000&include_empty_items=false&apikey=1573DA56-C791-474B-B4B5-6A65F1430EF0"},
       "mark": {"type":"line", "color":"#00b303"},
-       "transform": {"calculate": "coinName": "BNB"}
-      },
+       "transform": [
+           {"calculate": "coinName", "as": "BNB"}
+      ],
 
       {"data": {"url": "https://rest.coinapi.io/v1/ohlcv/USDT/GBP/history?period_id=8HRS&time_start=2021-01-20T00:00:00&limit=100000&include_empty_items=false&apikey=1573DA56-C791-474B-B4B5-6A65F1430EF0"},
       "mark": {"type":"line", "color":"#ff1a00"},
-       "transform": {"calculate": "coinName": "USDT"}
-      }
+       "transform": [
+           {"calculate": "coinName", "as": "USTD"}
+      ]
     ]
 }
