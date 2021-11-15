@@ -48,10 +48,10 @@
       ]
       },
 
-      {"data": {"url": "https://rest.coinapi.io/v1/ohlcv/USDT/GBP/history?period_id=8HRS&time_start=2021-01-20T00:00:00&limit=100000&include_empty_items=false&apikey=1573DA56-C791-474B-B4B5-6A65F1430EF0"},
+      {"data": {"url": "https://rest.coinapi.io/v1/ohlcv/MKR/GBP/history?period_id=8HRS&time_start=2021-01-20T00:00:00&limit=100000&include_empty_items=false&apikey=1573DA56-C791-474B-B4B5-6A65F1430EF0"},
       "mark": {"type":"line", "color":"#ff1a00"},
        "transform": [
-           {"calculate": "datum.coinName", "as": "USTD"}
+           {"calculate": "datum.coinName", "as": "MKR"}
       ]
       }
     ]
