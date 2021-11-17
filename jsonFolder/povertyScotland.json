@@ -9,7 +9,7 @@
     "color": "black"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/New%20COVID%20cases%20live%20data.csv",
+    "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/csvFolder/povertyWorkingScotland.csv",
     "format": {"type": "csv"}
   },
   "transform": [
