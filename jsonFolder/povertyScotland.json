@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Proportion of Scottish households that are working",
+    "text": "Proportion of Scottish households in poverty that work",
     "subtitle": "Yearly observations converted to 3-year averages; source: GOV.UK",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
