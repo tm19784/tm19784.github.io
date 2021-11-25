@@ -9,3 +9,9 @@
       "mark": {"type":"line", "color":"#ff1a00"},
        "transform": [
            {"calculate": "datum.coinName", "as": "MKR"}
+        
+        "tooltip":[
+        {"field":"time_period_start", "title": "Date", "type":"temporal" },
+        {"field":"price_open", "title": "Opening price (£)", "format":"$,.2d" }
+        {"field": "volume_traded", "title": "Trade volume", "type": "quantitative"}
+        {"field": "price_high", "title": "Highest recorded price", "format": "$,.2d"}
