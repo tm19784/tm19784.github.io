@@ -1,0 +1,51 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  
+    "description": "Maker opening price",
+  
+     "title": {
+      "text": "Maker opening price (GBP); x-x-202x to present (CHANGE RANGE IN API)",
+      "subtitle":"Data from API pulled at 8-hour intervals; Source: CoinAPI.",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black",
+      "subtitleColor":"black"
+    },
+    
+    "data": {
+      "url": "https://rest.coinapi.io/v1/ohlcv/MKR/GBP/history?period_id=8HRS&time_start=2021-01-20T00:00:00&limit=100000&include_empty_items=false&apikey=1573DA56-C791-474B-B4B5-6A65F1430EF0"},
+    "height": 300,
+    "width": 270,
+    "mark": {
+      "type": "line",
+      "point": false,
+      "interpolate": "linear",
+      "color": "#ff1a00"
+    },
+    "encoding": {
+      "x": {
+        "field": "time_period_start",
+        "type": "temporal",
+        "axis": {
+          "title": null,
+          "grid": true,
+          "labelSeparation": 20,
+          "ticks": false
+        }
+      },
+      "y": {
+        "field": "price_open",
+        "type": "quantitative",
+        "title": "",
+        "axis": {"grid": false}
+      },
+      "tooltip":[
+        {"field":"time_period_start", "title": "Date", "type":"temporal" },
+        {"field":"price_open", "title": "Opening price (£)", "format":"$,.2d" }
+        {"field": "volume_traded", "title": "Trade volume", "type": "quantitative"}
+        {"field": "price_high", "title": "Highest recorded price", "format": "$,.2d"}
+      ]
+    }
+  }
+    
