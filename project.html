@@ -58,21 +58,46 @@
       </script>
   </div>
    
-  <p class="graphNote"><span style="color: rgb(0, 0, 0);">However, price inflation for cryptocurrencies specifically has soared over an even shorter period.</span></p> 
+  <p class="graphNote"><span style="color: rgb(0, 0, 0);">However, inflation for some of the most prominent cryptocurrencies in today's market has soared over an even shorter period. [I wanted to make this a Trellis chart, but using a 'facet' when layering with 4 separate APIs is not possible in Vega. In addition, I am using the same API key for each of these 4 graphs, so after loading the page 25 times the graphs will not appear for the next 24 hours.]</span></p> 
    
   <!--Chart 16 -->
  
   <div class="chart" id="chart16">
       <script>
-        var myChart16 = "jsonFolder/x.json";
+        var myChart16 = "jsonFolder/projectBTC.json";
         vegaEmbed('#chart16', myChart16);
       </script>
   </div>
    
    <!--Chart 18 -->
+   
+   <div class="chart" id="chart18">
+      <script>
+        var myChart18 = "jsonFolder/projectETH.json";
+        vegaEmbed('#chart18', myChart18);
+      </script>
+   </div>
+   
    <!--Chart 19 -->
+   
+   <div class="chart" id="chart19">
+      <script>
+        var myChart19 = "jsonFolder/projectBNB.json";
+        vegaEmbed('#chart19', myChart19);
+      </script>
+   </div>
+   
    <!--Chart 20 -->
+   
+   <div class="chart" id="chart20">
+      <script>
+        var myChart20 = "jsonFolder/projectMKR.json";
+        vegaEmbed('#chart20', myChart20);
+      </script>
+  </div>
   
+   <p class="graphNote"><span style="color: rgb(0, 0, 0);">INSERT SENTENCE [CHANGE API RANGES IN 4 CRYPTO GRAPHS...</span></p> 
+   
   </center>
 </body>
 <!-- ///////////////////  END BODY //////////////////////////////////// -->
