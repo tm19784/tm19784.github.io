@@ -4,7 +4,7 @@
     "description": "Bitcoin opening price",
   
      "title": {
-      "text": "Live Bitcoin opening price (GBP); x-x-202x to present",
+      "text": "Bitcoin opening price (GBP); x-x-202x to present (CHANGE RANGE IN API)",
       "subtitle":"Data from API pulled at 8-hour intervals; Source: CoinAPI.",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
