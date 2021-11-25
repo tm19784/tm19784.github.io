@@ -1,30 +1,40 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-
-    "description": "Time series chart of top 4 most expensive cryptocoins' opening prices",
-
+    "description": "Live Bitcoin price over recent time",
 
     "title": {
-      "text": "Price of 4 most expensive cryptocoins over time",
-      "subtitle":"Layering used to make 4 separate API calls; source: CoinAPI",
+      "text": "Live Bitcoin price (GBP)",
+      "subtitle":"Data pulled at 8-hour intervals; source: CoinAPI",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
       "color": "black"
+      "subtitleColor": "black" 
     },
 
-
-    "height":300,
-    "width":270,
+  "data": {
+    "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/jsonFolder/data_FRED-CBBTCUSD.json",
+    "format": {"type": "json", "property": "observations"}
+  },
+  
+  "height": 300,
+  "width": 270,
+  "mark": {
+      "type": "line",
+      "point": false,
+      "interpolate": "linear",
+      "color": "aquamarine"},
+    
 
     
     "encoding": {
-      "x": {"field": "time_period_start", "type": "temporal", "title": "Date (8hr intervals)", "axis": {"grid": false}},
+      "x": {"field": "time_period_start", "type": "temporal", "title": "Date (8hr intervals)", "axis": {"grid": true}},
       "y": {"field": "price_open", "type": "quantitative", "title": "Coin opening price (GBP)", "axis": {"grid": false}}
       
     },
-
+"config": {}
+}
     "layer": [
       
       {"data": {"url": "https://rest.coinapi.io/v1/ohlcv/BTC/GBP/history?period_id=8HRS&time_start=2021-01-20T00:00:00&limit=100000&include_empty_items=false&apikey=1573DA56-C791-474B-B4B5-6A65F1430EF0"},
