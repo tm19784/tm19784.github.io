@@ -42,7 +42,7 @@
       },
       "tooltip":[
         {"field":"time_period_start", "title": "Date", "type":"temporal" },
-        {"field":"price_open", "title": "Opening price", "format":"$,.2d" }
+        {"field":"price_open", "title": "Opening price", "format":"$,.3f" }
       ]
     }
   }
