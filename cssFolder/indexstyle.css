@@ -2,7 +2,7 @@ body {
  /* Richard suggestion that ended up not working... width: 500px */   
     background-color: #66CDAA;
     font-family: "Times New Roman", Times, serif;
-    color: #F0F8FF;
+    color: #000066;
     border: black solid 3.5px;
     margin: auto;
 }
