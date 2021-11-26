@@ -4,7 +4,7 @@
     "description": "Maker opening price",
   
      "title": {
-      "text": "Maker opening price (GBP); x-x-202x to present (CHANGE RANGE IN API)",
+      "text": "Maker opening price (GBP); 20-01-2021 to present",
       "subtitle":"Data from API pulled at 8-hour intervals; Source: CoinAPI.",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
@@ -44,7 +44,7 @@
         {"field":"time_period_start", "title": "Date", "type":"temporal" },
         {"field":"price_open", "title": "Opening price (£)", "format":"$,.2d" },
         {"field": "volume_traded", "title": "Trade volume", "type": "quantitative"},
-        {"field": "price_high", "title": "Highest recorded price", "format": "$,.2d"}
+        {"field": "price_high", "title": "Highest recorded price", "format": "£,.2d"}
       ]
     }
   }
