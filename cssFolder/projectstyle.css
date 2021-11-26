@@ -31,6 +31,7 @@ h2 {
        text-decoration: underline;
        letter-spacing: 3.5px;
        font-weight: bold;
+}
 
 .chart {
     /* Richard suggestion that ended up not working... display: flex; justify-content: center */
