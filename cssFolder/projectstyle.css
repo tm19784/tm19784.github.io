@@ -25,6 +25,13 @@ h2 {
     text-align: center;
 }
 
+.weekTitle {
+       font-family: "Times New Roman", Times, serif;
+       text-align: center;
+       text-decoration: underline;
+       letter-spacing: 3.5px;
+       font-weight: bold;
+
 .chart {
     /* Richard suggestion that ended up not working... display: flex; justify-content: center */
     font-family: Georgia, Verdana, sans-serif;
