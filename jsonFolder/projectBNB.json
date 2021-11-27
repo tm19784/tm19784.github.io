@@ -24,34 +24,6 @@
       "color": "#00b303"
     },
     
-    "transform": [
-      {"calculate": "timeParse(datum.time_period_start, '%d/%m/%Y')", "as": "date"},
-      {"calculate": "year(datum.date)", "as": "year"},
-  
-      {"filter": "datum.year>=minYear"},
-      {"filter": "datum.year<=maxYear"}
-  ],
-  
-    "params": [    
-      {"name":"minYear", "value":2016,
-         "bind":{
-           "input": "range",
-           "min": 2016, 
-           "max": 2021, 
-           "step": 1,
-           "name": "Start year:"}
-      },
-  
-      {"name":"maxYear", "value":2021,
-         "bind":{
-           "input": "range",
-           "min": 2016, 
-           "max": 2021, 
-           "step": 1,
-           "name": "End year:"}
-      }
-    ],
-    
     "encoding": {
       "x": {
         "field": "time_period_start",
@@ -73,7 +45,7 @@
         {"field":"time_period_start", "title": "Date", "type":"temporal" },
         {"field":"price_open", "title": "Opening price (£)", "format":"$,.2d" },
         {"field": "volume_traded", "title": "Trade volume", "type": "quantitative"},
-        {"field": "price_high", "title": "Highest recorded price", "format": "£,.2d"}
+        {"field": "price_high", "title": "Highest recorded price", "format": "$,.2d"}
       ]
     }
   }
