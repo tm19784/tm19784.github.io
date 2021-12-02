@@ -17,6 +17,10 @@
       "url": "https://rest.coinapi.io/v1/ohlcv/BNB/GBP/history?period_id=8HRS&time_start=2021-01-20T00:00:00&limit=100000&include_empty_items=false&apikey=1573DA56-C791-474B-B4B5-6A65F1430EF0"},
     "height": 300,
     "width": 270,
+    "transform":[
+      {"calculate":"'£'+datum.price_open", "as": "price_open_pounds"},
+      {"calculate":"'£'+datum.price_high", "as": "price_high_pounds"}
+    ],
     "mark": {
       "type": "line",
       "point": false,
@@ -43,9 +47,9 @@
       },
       "tooltip":[
         {"field":"time_period_start", "title": "Date", "type":"temporal" },
-        {"field":"price_open", "title": "Opening price (£)", "format":"$,.2d" },
+        {"field":"price_open_pounds", "title": "Opening price (£)"},
         {"field": "volume_traded", "title": "Trade volume", "type": "quantitative"},
-        {"field": "price_high", "title": "Highest recorded price", "format": "$,.2d"}
+        {"field": "price_high_pounds", "title": "Highest recorded price"}
       ]
     }
   }
