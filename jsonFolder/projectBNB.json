@@ -47,7 +47,7 @@
       },
       "tooltip":[
         {"field":"time_period_start", "title": "Date", "type":"temporal" },
-        {"field":"price_open_pounds", "title": "Opening price (£)"},
+        {"field":"price_open_pounds", "title": "Opening price"},
         {"field": "volume_traded", "title": "Trade volume", "type": "quantitative"},
         {"field": "price_high_pounds", "title": "Highest recorded price"}
       ]
