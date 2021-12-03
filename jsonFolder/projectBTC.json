@@ -5,7 +5,7 @@
   
      "title": {
       "text": "Bitcoin opening price (GBP); 20-01-2021 to present",
-      "subtitle":"Data from API pulled at 8-hour intervals; Source: CoinAPI.",
+      "subtitle":"Source: CoinAPI; 'Month' function is zero-based (slider format - 0=Jan, 1=Feb, ...)",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
@@ -60,7 +60,7 @@
         "field": "time_period_start",
         "type": "temporal",
         "axis": {
-          "title": null,
+          "title": "Time (data pulled from 8-hour intervals)",
           "grid": true,
           "labelSeparation": 20,
           "ticks": false
@@ -69,7 +69,7 @@
       "y": {
         "field": "price_open",
         "type": "quantitative",
-        "title": "",
+        "title": "Opening price (£)",
         "axis": {"grid": false}
       },
       "tooltip":[
