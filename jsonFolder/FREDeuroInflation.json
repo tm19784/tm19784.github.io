@@ -6,7 +6,7 @@
   
     "title": {
       "text": "Inflation, consumer prices for the Euro Area",
-      "subtitle":"Average over entire area in %; API not used due to CORS issue; source: FRED",
+      "subtitle":"API URL encoded for CORS reverse proxy; Source: FRED",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
@@ -15,7 +15,7 @@
     
     "data": 
       {
-        "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/jsonFolder/FRED_euro_inflation_data.json",
+        "url": "https://api.allorigins.win/raw?url=https%3A%2F%2Fapi.stlouisfed.org%2Ffred%2Fseries%2Fobservations%3Fseries_id%3DFPCPITOTLZGEMU%26api_key%3D7dbe05263f2257c084f7ec044350a936%26file_type%3Djson",
         "format": {"type": "json", "property": "observations"}
       },
   
@@ -24,7 +24,7 @@
     
     "mark": {
       "type": "bar",
-      "color": "#0044ff"
+      "color": "#6b00b3"
     },
     
     "encoding": {
@@ -43,7 +43,11 @@
         "field": "value",
         "type": "quantitative",
         "title": "Inflation in percent",
-        "axis": {"grid": false}
-      }
+        "axis": {"grid": true}
+      },
+      "tooltip":[
+        {"field":"value", "title": "Inflation (%)", "type":"quantitative" },
+        {"field":"date", "title": "Date", "type":"temporal" }
+      ]
     }
   }
