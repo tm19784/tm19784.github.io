@@ -29,6 +29,9 @@
       "title": "Percentage of citizens reporting to own cryptocurrency",
       "axis": {"grid": true}
     },
-    "color": {"value": "#00b341"}
+    "color": {"value": "#00b341"},
+    "tooltip":[
+        {"field":"1", "title": "Citizens (%)", "type":"quantitative" }
+      ]
   }
 }
