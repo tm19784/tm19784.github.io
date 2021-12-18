@@ -1,49 +1,49 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  
-    "description": "West Ham goals from website scraping",
-    
-  
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "data": {"url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/csvFolder/goalsWestHamStats.csv",
+  "format":{
+    "type": "csv"}},
+
     "title": {
-      "text": "West Ham's Premier League goals as of 08/11/2021",
-      "subtitle":"Data retrieved from scraper using Python; source: WHUFC",
-      "subtitleFontStyle":"italic",
-      "subtitleFontSize":10,
-      "anchor": "start",
-      "color": "black"
-    },
-    
-    "data": 
-      {
-        "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/csvFolder/westHamGoals.csv",
-        "format": {"type": "csv"}
-      },
-  
-    "height": 300,
-    "width": 300,
-    
-    "mark": {
-      "type": "bar",
-      "color": "#00d945"
-    },
-    
-    "encoding": {
-    
-      "x": {
-        "field": "0",
-        "type": "temporal",
-        "axis": {
-          "title": "Date of match",
-          "grid": false,
-          "ticks": false
-        }
-      },
-  
-      "y": {
-        "field": "1",
-        "type": "quantitative",
-        "title": "Goals scored by West Ham",
-        "axis": {"grid": true}
-      }
-    }
-  }
+    "text": "Home and away goals during West Ham matches",
+    "subtitle":["Data scraped from table on WHUFC website (15/08/21 - 15/12/21)",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+
+  },
+
+  "height":300,
+  "width":300,         
+
+  "encoding": {"x": {"field": "date", "type": "temporal","title":"Date of fixture"},
+  "tooltip":[
+        {"field":"stadium", "title": "Stadium"},
+        {"field": "home", "title": "Home team"},
+        {"field": "away", "title": "Away team"}
+      ]
+  },
+
+  "layer":[
+
+    {"mark": {"type":"circle", "size":75},
+     
+     "encoding": {
+       "y": {"field": "home_goals", "type": "quantitative","title":"Number of goals"},
+        "color": {
+        "datum": "Home team",
+            "scale": {"range": ["#ff1e00", "#00fffb"]},
+            "legend":{
+              "orient": "top",
+              "fillColor":"navajowhite"}}}},
+
+
+    {"mark": {"type":"circle", "size":75},
+     
+     "encoding": {
+       "y": {"field": "away_goals", "type": "quantitative","title":"Number of goals"},
+      "color": {"datum": "Away team"}}}
+     ]
+}
