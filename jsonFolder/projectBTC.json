@@ -14,7 +14,7 @@
     },
     
     "data": {
-      "url": "https://rest.coinapi.io/v1/ohlcv/BTC/GBP/history?period_id=8HRS&time_start=2021-01-20T00:00:00&limit=100000&include_empty_items=false&apikey=1573DA56-C791-474B-B4B5-6A65F1430EF0"},
+      "url": "https://rest.coinapi.io/v1/ohlcv/BTC/GBP/history?period_id=8HRS&time_start=2021-01-20T00:00:00&limit=100000&include_empty_items=false&apikey=60BD0DF8-F250-4CF3-B8D7-B023248A51A8"},
     "height": 300,
     "width": 270,
     "transform":[
