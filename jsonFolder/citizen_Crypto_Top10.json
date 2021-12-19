@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Citizens' cryptocurrency ownership: top 10 ",
+    "text": "Citizens' cryptocurrency ownership: top 11 ",
     "subtitle": ["Data scraped from Yahoo Finance page","Method copies the useful HTML and uses as raw GitHub link"],
     "subtitleFontSize": 10,
     "anchor": "start",
