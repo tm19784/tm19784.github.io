@@ -30,7 +30,7 @@
 
 <body>
  <header>
-        <h1>Data<span id="span3"> Science Project: Is there a relationship between the price/growth of cryptocoins in countries and their respective inflation, unemployment and aggregate investment rates?</span> </h1>
+        <h1>Data<span id="span3"> Science Project: Is there a relationship between the prices of the most prominent cryptocoins and countries' respective inflation and unemployment rates?</span> </h1>
         <h2>Oliver<span id="span4"> Bhattachary Krishnamma, 2021</span> </h2>
         <div id="headerdiv2">The following analysis is purely that of correlation and basic regression analysis, so is not sufficient to interpret relationships as causal. </div>
  </header>
@@ -49,7 +49,7 @@
    
    <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 1</span></p>
    
-   <p class="graphNote"><span style="color: rgb(0, 0, 0);">Inflation has been subsiding in developed countries (such as the Euro area) in recent years.</span></p>
+   <p class="graphNote"><span style="color: rgb(0, 0, 0);">Inflation has been subsiding in large parts of the world (such as the Euro area) in recent years. However, unemployment has stayed relatively high (at least for the last 15-20 years).</span></p>
    
   <!--Chart 14 -->
  
@@ -57,6 +57,15 @@
       <script>
         var myChart14 = "jsonFolder/FREDeuroInflation.json";
         vegaEmbed('#chart14', myChart14);
+      </script>
+  </div>
+   
+  <!--Chart 23 -->
+   
+  <div class="chart" id="chart23">
+      <script>
+        var myChart23 = "jsonFolder/FREDeuroUnemployment.json";
+        vegaEmbed('#chart23', myChart23);
       </script>
   </div>
    
@@ -112,12 +121,12 @@
   
    <p class="graphNote"><span style="color: rgb(0, 0, 0);">INSERT SENTENCE</span></p> 
    
-   <!--Chart 23 -->
+   <!--Chart 24 -->
    
-   <div class="chart" id="chart23">
+   <div class="chart" id="chart24">
       <script>
-        var myChart23 = "jsonFolder/Z.json";
-        vegaEmbed('#chart23', myChart23);
+        var myChart24 = "jsonFolder/Z.json";
+        vegaEmbed('#chart24', myChart24);
       </script>
    </div>
    
