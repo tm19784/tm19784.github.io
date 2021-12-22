@@ -1,0 +1,52 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "Unemployment rates for Euro area in %",
+    
+  
+    "title": {
+      "text": "Unemployment rates since 2005 for the Euro Area",
+      "subtitle":"API URL encoded for CORS reverse proxy; Source: FRED",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+    "data": 
+      {
+        "url": "https://api.allorigins.win/raw?url=https%3A%2F%2Fapi.stlouisfed.org%2Ffred%2Fseries%2Fobservations%3Fseries_id%3DLRUN64TTEZA156N%26api_key%3D7dbe05263f2257c084f7ec044350a936%26file_type%3Djson",
+        "format": {"type": "json", "property": "observations"}
+      },
+  
+    "height": 300,
+    "width": 300,
+    
+    "mark": {
+      "type": "bar",
+      "color": "#ff2950"
+    },
+    
+    "encoding": {
+    
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "axis": {
+          "title": "Year (observations on 1st of January)",
+          "grid": false,
+          "ticks": false
+        }
+      },
+  
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Unemployment rate in percent",
+        "axis": {"grid": true}
+      },
+      "tooltip":[
+        {"field":"value", "title": "Unemployment (%)", "type":"quantitative" }
+      ]
+    }
+  }
