@@ -1,5 +1,5 @@
 body {
- /* Richard suggestion that ended up not working... width: 500px */   
+ /* This gives the page a background colour, sets the font, for the page, gives it a border, and sets a colour for all words on the page that have not been given a referenced class. */   
     background-color: #7FFF00;
     font-family: Copperplate, Papyrus, fantasy;
     color: #6495ED;
@@ -7,6 +7,7 @@ body {
     margin: auto;
 }
 
+/* Most headings are underlined and are aligned in the centre of the page. */
 h1 {
     text-align: center;
     text-decoration: underline;
@@ -25,6 +26,7 @@ h2 {
     text-align: center;
 }
 
+/* Titles indicating new weeks/visualisations are given the same format as the headings, for consistency. */
 .weekTitle {
        font-family: "Times New Roman", Times, serif;
        text-align: center;
@@ -33,6 +35,7 @@ h2 {
        font-weight: bold;
 }
 
+ /* My charts are given a different font to separate from the rest of the page. The borders and margins are of typical size. */
 .chart {
     /* Richard suggestion that ended up not working... display: flex; justify-content: center */
     font-family: Georgia, Verdana, sans-serif;
@@ -45,6 +48,8 @@ h2 {
     background-color: #FFFAFA;
 }
 
+/* The below CSS is taken from Richard's page, and sets a different number of columns (of graphs) on the page depending on the size of the screen that is being used. */
+/* E.g., a typical phone displays one column, and iPad displays two, and a typical computer screen displays three. */
 /* ------------------------------------------------------------------------------
 	DIFFERENT SCREEN SIZES
 -------------------------------------------------------------------------------*/
