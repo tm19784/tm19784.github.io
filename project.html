@@ -131,15 +131,65 @@
   
    <p class="graphNote"><span style="color: rgb(0, 0, 0);">INSERT SENTENCE</span></p> 
    
-   <!--Chart 24 -->
+   <!--Chart 24: this Trellis chart shows the different annual inflation rates across the last 5 years in the countries making up the scraped data -->
    
    <div class="chart" id="chart24">
       <script>
-        var myChart24 = "jsonFolder/Z.json";
+        var myChart24 = "jsonFolder/inflation_Trellis_barNigeria.json";
         vegaEmbed('#chart24', myChart24);
       </script>
    </div>
    
+   <!--Chart 25: this Trellis chart shows the different annual unemployment rates across the last 5 years in the countries making up the scraped data -->
+   
+   <div class="chart" id="chart25">
+      <script>
+        var myChart25 = "jsonFolder/unemployment_Trellis_plusHK.json";
+        vegaEmbed('#chart25', myChart25);
+      </script>
+   </div>
+
+   <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 5</span></p>
+  
+   <p class="graphNote"><span style="color: rgb(0, 0, 0);">INSERT SENTENCE</span></p> 
+   
+   <!--Chart 26: this selectable legend chart shows the monthly inflation rates (for countries from the Trellis chart where monthly data is available), as well as cryptocoins' prices, normalised to their Z value over the last 5 years -->
+   
+   <div class="chart" id="chart26">
+      <script>
+        var myChart26 = "jsonFolder/inflationCoins_normalisation_legend.json";
+        vegaEmbed('#chart26', myChart26);
+      </script>
+   </div>
+   
+   <!--Chart 27: this selectable legend chart shows the monthly unemployment rates (for countries from the Trellis chart where monthly data is available), as well as cryptocoins' prices, normalised to their Z value over the last 5 years -->
+   
+   <div class="chart" id="chart27">
+      <script>
+        var myChart27 = "jsonFolder/unemploymentCoins_normalisation_legend.json";
+        vegaEmbed('#chart27', myChart27);
+      </script>
+   </div>
+
+   <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 6</span></p>
+  
+   <p class="graphNote"><span style="color: rgb(0, 0, 0);">INFLATION REGRESSIONS</span></p> 
+   
+   <!--Chart 28: this ... -->
+   
+   <div class="chart" id="chart28">
+      <script>
+        var myChart28 = "jsonFolder/Z.json";
+        vegaEmbed('#chart28', myChart28);
+      </script>
+   </div>
+
+   <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 7</span></p>
+  
+   <p class="graphNote"><span style="color: rgb(0, 0, 0);">UNEMPLOYMENT REGRESSIONS</span></p> 
+
+   <!--Chart Y: this ... -->
+
   </center>
 </body>
 <!-- ///////////////////  END BODY //////////////////////////////////// -->
