@@ -57,9 +57,7 @@
    
    <!-- As in my index.html, I have three classes of p-notes: 'weekTitle' for subtitles, 'graphNote' for small notes on the page, and 'rubric-launch' for hyperlinks. -->
    <!-- The first is underlined to separate the visualisations neatly, the second is not as it is just a note; and the third links to Google Colaboratory notebooks. -->
-   <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 1</span></p>
-   
-   <p class="graphNote"><span style="color: rgb(0, 0, 0);">Inflation has been subsiding in large parts of the world (such as the Euro area) in recent years. However, unemployment has stayed relatively high (at least for the last 15-20 years).</span></p>
+   <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 1: time-series changes in unemployment and inflation rates in the Euro area:</span></p>
    
   <!--Chart 14: this chart shows an example of historical time-series growth of inflation, one of the main variables we are looking at -->
  
@@ -79,9 +77,9 @@
       </script>
   </div>
    
-  <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 2</span></p>
+  <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 2: live prices of three of the most prominent cryptocurrencies this year:</span></p>
    
-  <p class="graphNote"><span style="color: rgb(0, 0, 0);">However, inflation for some of the most prominent cryptocurrencies in today's market has soared over an even shorter period. [I wanted to make this a Trellis chart, but using a 'facet' when layering with 3 separate APIs is not possible in Vega.]</span></p> 
+  <p class="graphNote"><span style="color: rgb(0, 0, 0);">I wanted to make this a Trellis chart, but using a 'facet' when layering with 3 separate APIs is not possible in Vega.</span></p> 
    
   <!--Chart 16: this chart, as well as the next two, show time-series cryptocoin price growth from this year; the first being Bitcoin's -->
  
@@ -110,10 +108,8 @@
       </script>
    </div>
    
-   <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 3</span></p>
+   <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 3: which countries have the highest proportion of their citizens owning cryptocurrency?</span></p>
   
-   <p class="graphNote"><span style="color: rgb(0, 0, 0);">It would, therefore, be interesting to see if there was a relationship between having more citizens that own cryptocurrency and that country's unemployment and inflation rates. The following bar chart shows the top 10 countries for this proportion in the world.</span></p> 
-   
    <!--Chart 20: this chart uses scraped data rather than an API, hence I am treating it as a different visualisation than the FRED bar charts -->
    
    <div class="chart" id="chart20">
@@ -127,9 +123,7 @@
     <p class="rubric-launch"> To view the simple scraper from HTML that was copied from the Yahoo page, click <a class="textLink" href="https://colab.research.google.com/drive/1RsrE0PvQtjlF0W_-yWTzh_txm9PyOnXy?usp=sharing"> here</a>.</p>
    </div>
    
-   <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 4</span></p>
-  
-   <p class="graphNote"><span style="color: rgb(0, 0, 0);">INSERT SENTENCE</span></p> 
+   <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 4: evolution of inflation and unemployment rates in more detail:</span></p>
    
    <!--Chart 24: this Trellis chart shows the different annual inflation rates across the last 5 years in the countries making up the scraped data -->
    
@@ -154,9 +148,7 @@
     <p class="rubric-launch"> To see the data-cleaning required to make these Trellis charts, click <a class="textLink" href="https://colab.research.google.com/drive/1gbe-_E9JB6-rjfwhbzMZTVwoE7ZfZWCt?usp=sharing"> here</a>.</p>
    </div>
 
-   <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 5</span></p>
-  
-   <p class="graphNote"><span style="color: rgb(0, 0, 0);">INSERT SENTENCE</span></p> 
+   <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 5: do our variables follow similar distributions?</span></p>
    
    <!--Chart 26: this selectable legend chart shows the monthly inflation rates (for countries from the Trellis chart where monthly data is available), as well as cryptocoins' prices, normalised to their Z value over the last 5 years -->
    
@@ -182,9 +174,7 @@
    </div>
 
    <!--The following visualisations cover inflation rates of the four countries of interest regressed against two cryptocurrencies, hence yielding 8 charts -->
-   <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 6</span></p>
-  
-   <p class="graphNote"><span style="color: rgb(0, 0, 0);">INFLATION REGRESSIONS</span></p> 
+   <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 6: regressions with a country's inflation rate as the dependent variable:</span></p>
    
    <!--Chart 28: this is a polynomial regression of Bitcoin's price on the German inflation rate -->
    
@@ -259,9 +249,7 @@
    </div>
 
    <!--The following visualisations cover unemployment rates of the four countries of interest regressed against two cryptocurrencies, hence yielding 8 charts -->
-   <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 7</span></p>
-  
-   <p class="graphNote"><span style="color: rgb(0, 0, 0);">UNEMPLOYMENT REGRESSIONS</span></p> 
+   <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 7: regressions with a country's unemployment rate as the dependent variable:</span></p>
 
    <!--Chart 36: this is a polynomial regression of Bitcoin's price on the German unemployment rate -->
    
@@ -339,6 +327,22 @@
    <div class=“wrap”
     <p class="rubric-launch"> To see an example of the data-cleaning and regression techniques used for the 16 different regressions, click <a class="textLink" href="https://colab.research.google.com/drive/1n7RUK5R4gdHicc4kfyp12r_TtAvlOHtE?usp=sharing"> here</a>.</p>
    </div>
+
+   <p class="weekTitle"><span style="color: rgb(255, 0, 38);">Section 1: the aims of my project:</span></p>
+  
+   <p class="graphNote"><span style="color: rgb(0, 0, 0);">INSERT PARAGRAPH</span></p>
+
+   <p class="weekTitle"><span style="color: rgb(255, 0, 38);">Section 2: the data I used, and how this was accessed:</span></p>
+  
+   <p class="graphNote"><span style="color: rgb(0, 0, 0);">INSERT PARAGRAPH</span></p>
+
+   <p class="weekTitle"><span style="color: rgb(255, 0, 38);">Section 3: my data-cleaning/analysis challenges, and the tools I used to overcome these:</span></p>
+  
+   <p class="graphNote"><span style="color: rgb(0, 0, 0);">INSERT PARAGRAPH</span></p>
+
+   <p class="weekTitle"><span style="color: rgb(255, 0, 38);">Section 4: the conclusions of the project:</span></p>
+  
+   <p class="graphNote"><span style="color: rgb(0, 0, 0);">INSERT PARAGRAPH</span></p>
 
   </center>
 </body>
