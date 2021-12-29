@@ -34,10 +34,10 @@
     
     "params": [
     {"name": "minYear",
-      "value": 2015,
+      "value": 1961,
       "bind": {
         "input": "range",
-        "min": 2015,
+        "min": 1961,
         "max": 2022,
         "step": 1,
         "name": "Start year:"
@@ -48,7 +48,7 @@
       "value": 2022,
       "bind": {
         "input": "range",
-        "min": 2015,
+        "min": 1961,
         "max": 2022,
         "step": 1,
         "name": "End year:"
