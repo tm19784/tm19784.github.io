@@ -21,11 +21,40 @@
   
     "height": 300,
     "width": 300,
-    
     "mark": {
       "type": "bar",
       "color": "#ff2950"
     },
+    
+    "transform": [
+      {"calculate":"year(datum.date)", "as": "year"},
+      {"filter": "datum.year>minYear"},
+      {"filter": "datum.year<maxYear"}
+    ],
+    
+    "params": [
+    {"name": "minYear",
+      "value": 2005,
+      "bind": {
+        "input": "range",
+        "min": 2005,
+        "max": 2022,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 2005,
+        "max": 2022,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+   ]
     
     "encoding": {
     
