@@ -29,6 +29,7 @@
       "axis": {"grid": true}
     },
     "color": {"value": "#00b341"},
+    "opacity": {"value": 0.75},
     "tooltip":[
         {"field":"1", "title": "Citizens (%)", "type":"quantitative" }
       ]
