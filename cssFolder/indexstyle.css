@@ -55,12 +55,12 @@ h2 {
 }
 
 .button {
-  min-width: 300px;
-  min-height: 60px;
+  min-width: 75px;
+  min-height: 15px;
   font-family: 'Nunito', sans-serif;
-  font-size: 22px;
+  font-size: 15px;
   text-transform: uppercase;
-  letter-spacing: 1.3px;
+  letter-spacing: 1px;
   font-weight: 700;
   color: #313133;
   background: #4FD1C5;
@@ -78,8 +78,8 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
 button::before {
 content: '';
   border-radius: 1000px;
-  min-width: calc(300px + 12px);
-  min-height: calc(60px + 12px);
+  min-width: calc(75px + 30px);
+  min-height: calc(15px + 30px);
   border: 6px solid #00FFCB;
   box-shadow: 0 0 60px rgba(0,255,203,.64);
   position: absolute;
@@ -103,7 +103,7 @@ button::after {
   content: '';
   width: 30px; height: 30px;
   border-radius: 100%;
-  border: 6px solid #00FFCB;
+  border: 10px solid #00FFCB;
   position: absolute;
   z-index: -1;
   top: 50%;
@@ -119,13 +119,13 @@ button:hover::after, button:focus::after {
 
 @keyframes ring {
   0% {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     opacity: 1;
   }
   100% {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     opacity: 0;
   }
 }
