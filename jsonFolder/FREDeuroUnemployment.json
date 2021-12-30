@@ -6,7 +6,7 @@
   
     "title": {
       "text": "Unemployment rates since 2005 for the Euro Area",
-      "subtitle":"API URL encoded for CORS reverse proxy; Source: FRED",
+      "subtitle":"CORS reverse proxy used to bypass restrictions; Source: FRED",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
