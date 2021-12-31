@@ -47,6 +47,7 @@ h2 {
     background-color: white
 }
 
+/* The following CSS code (lines 51-130) take inspiration from this website: 'https://www.webtopic.com/cool-css-button-examples/'. I took example code from here and played around with the parameters to make my own buttons. */
 .multi-button {
   height: 100%;
   display: flex;
