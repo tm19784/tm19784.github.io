@@ -4,7 +4,7 @@
     "description": "Bitcoin opening price",
   
      "title": {
-      "text": "Bitcoin opening price (GBP); 20-01-2021 to present",
+      "text": "Bitcoin opening price (GBP) over 2021",
       "subtitle":"Source: CoinAPI; 'Month' function is zero-based (slider format - 0=Jan, 1=Feb, ...)",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
@@ -14,7 +14,7 @@
     },
     
     "data": {
-      "url": "https://rest.coinapi.io/v1/ohlcv/BTC/GBP/history?period_id=8HRS&time_start=2021-01-20T00:00:00&limit=100000&include_empty_items=false&apikey=60BD0DF8-F250-4CF3-B8D7-B023248A51A8"},
+      "url": "https://rest.coinapi.io/v1/ohlcv/BTC/GBP/history?period_id=8HRS&time_start=2021-01-01T00:00:00&limit=1089&include_empty_items=false&apikey=60BD0DF8-F250-4CF3-B8D7-B023248A51A8"},
     "height": 300,
     "width": 270,
     "transform":[
