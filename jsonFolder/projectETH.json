@@ -4,7 +4,7 @@
     "description": "Ethereum opening price",
   
      "title": {
-      "text": "Ethereum opening price (GBP); 20-01-2021 to present",
+      "text": "Ethereum opening price (GBP) over 2021",
       "subtitle":"Source: CoinAPI; 'Month' function is zero-based (slider format - 0=Jan, 1=Feb, ...)",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
@@ -14,7 +14,7 @@
     },
     
     "data": {
-      "url": "https://rest.coinapi.io/v1/ohlcv/ETH/GBP/history?period_id=8HRS&time_start=2021-01-20T00:00:00&limit=100000&include_empty_items=false&apikey=D35BBF2B-EEB4-4B5E-A128-7F9DF5B2D755"},
+      "url": "https://rest.coinapi.io/v1/ohlcv/ETH/GBP/history?period_id=8HRS&time_start=2021-01-01T00:00:00&limit=1089&include_empty_items=false&apikey=D35BBF2B-EEB4-4B5E-A128-7F9DF5B2D755"},
     "height": 300,
     "width": 270,
     "transform":[
