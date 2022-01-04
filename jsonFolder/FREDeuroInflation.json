@@ -53,7 +53,9 @@
         "step": 1,
         "name": "End year:"
       }
-    }
+    },
+    {"name": "highlight", "select": {"type": "point", "on": "mouseover"}
+      }
    ],
     
     "encoding": {
@@ -74,8 +76,12 @@
         "title": "Inflation in percent",
         "axis": {"grid": true}
       },
+      "fillOpacity": {
+      "condition": {"param": "highlight", "value": 1},
+      "value": 0.4
+    },
       "tooltip":[
-        {"field":"value", "title": "Inflation (%)", "type":"quantitative" },
+        {"field":"value", "title": "Inflation (%)", "type":"quantitative", "format": ",.2f" },
         {"field":"date", "title": "Date", "type":"temporal" }
       ]
     }
