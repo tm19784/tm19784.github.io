@@ -11,6 +11,10 @@
     "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/csvFolder/top10_Crypto_Countries.csv",
     "format": {"type": "csv"}
   },
+  "params": [
+      {"name": "highlight", "select": {"type": "point", "on": "mouseover"}
+      }
+  ],
   
   "height": 300,
   "width": 300,
@@ -27,6 +31,10 @@
       "type": "quantitative",
       "title": "Percentage of citizens reporting to own cryptocurrency",
       "axis": {"grid": true}
+    },
+    "fillOpacity": {
+      "condition": {"param": "highlight", "value": 1},
+      "value": 0.6
     },
     "color": {"value": "#00b341"},
     "opacity": {"value": 0.75},
