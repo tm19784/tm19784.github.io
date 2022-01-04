@@ -24,12 +24,6 @@
       {"filter": "datum.month_time_period_start>minMonth"},
       {"filter": "datum.month_time_period_start<maxMonth"}
     ],
-    "mark": {
-      "type": "line",
-      "point": false,
-      "interpolate": "linear",
-      "color": "#002fff"
-    },
 "params": [
     {
       "name": "minMonth",
