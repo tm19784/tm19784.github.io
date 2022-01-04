@@ -20,7 +20,7 @@
     },
 
   "height": 300,
-  "width": 300,
+  "width": 270,
   "transform":[
       {"calculate":"'£'+datum.price_open", "as": "price_open_pounds"},
       {"calculate":"'£'+datum.price_high", "as": "price_high_pounds"},
