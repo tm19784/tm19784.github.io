@@ -24,60 +24,83 @@
       {"filter": "datum.month_time_period_start>minMonth"},
       {"filter": "datum.month_time_period_start<maxMonth"}
     ],
-    "mark": {
-      "type": "line",
-      "point": false,
-      "interpolate": "linear",
-      "color": "#00b303"
-    },
-    "params": [
+"params": [
     {
       "name": "minMonth",
       "value": 0,
       "bind": {
         "input": "range",
         "min": 0,
-        "max": 11,
+        "max": 12,
         "step": 1,
         "name": "Start month:"
       }
     },
     {
       "name": "maxMonth",
-      "value": 11,
+      "value": 12,
       "bind": {
         "input": "range",
         "min": 0,
-        "max": 11,
+        "max": 12,
         "step": 1,
         "name": "End month:"
       }
     }
   ],
-    
-    "encoding": {
-      "x": {
-        "field": "time_period_start",
-        "type": "temporal",
-        "axis": {
+  "encoding": {
+    "x": {"field": "time_period_start", "type": "temporal", 
           "title": "Time (data pulled from 8-hour intervals)",
-          "grid": true,
-          "labelSeparation": 20,
-          "ticks": false
-        }
-      },
-      "y": {
-        "field": "price_open",
-        "type": "quantitative",
-        "title": "Opening price (£)",
+          "axis":{"grid":true, "labelSeparation": 20,
+          "ticks": false}
+          }},
+ 
+  "layer": [
+    {"encoding": {
+        "y": {"field": "price_open", 
+              "type": "quantitative", 
+              "title": "Opening price (£)",
         "axis": {"grid": false}
-      },
-      "tooltip":[
-        {"field":"time_period_start", "title": "Date", "type":"temporal" },
+        }},
+        
+        "layer": [
+          {"mark":{
+            "type": "line",
+            "point": false,
+            "interpolate": "linear",
+            "color": "#00b303"}},
+          {"transform": 
+            [{"filter": {"selection": "hover"}}], 
+               "mark": {
+                 "type":"circle",
+                 "size":150,
+                 "color":"#00ffcc"}}
+      ]
+    },
+    
+    {"mark": "rule", 
+      "encoding": {
+         "opacity": {
+           "condition": {"value": 0, "selection": "hover"},
+           "value": 0
+             },
+          "tooltip": [
+          {"field":"time_period_start", "title": "Date", "type":"temporal" },
         {"field":"price_open_pounds", "title": "Opening price"},
         {"field": "volume_traded", "title": "Trade volume", "type": "quantitative"},
         {"field": "price_high_pounds", "title": "Highest recorded price"}
-      ]
+            ]
+           },
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": ["time_period_start"],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+        }
+      }
     }
-  }
-       
+  ]
+}
