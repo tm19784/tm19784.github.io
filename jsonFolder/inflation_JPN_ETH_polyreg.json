@@ -18,10 +18,10 @@
       {
         "mark": {"type": "square", "filled": true},
         "encoding": {
-          "x": {"field": "ETH_closing_price", "type": "quantitative", "title":"Ethereum closing price (£)"},
+          "x": {"field": "ETH_closing_price", "type": "quantitative", "title":"Ethereum closing price (£): actual & fitted value"},
           "y": {
             "field": "Japan_inflation_rate",
-            "type": "quantitative", "title":"Japanese inflation rate (%)"
+            "type": "quantitative", "title":"Japanese inflation rate (%): actual & fitted value"
           },
         "size": {"value": 40},
         "tooltip":[
