@@ -18,10 +18,10 @@
       {
         "mark": {"type": "square", "filled": true},
         "encoding": {
-          "x": {"field": "BTC_closing_price", "type": "quantitative", "title":"Bitcoin closing price (£)"},
+          "x": {"field": "BTC_closing_price", "type": "quantitative", "title":"Bitcoin closing price (£): actual & fitted value"},
           "y": {
             "field": "Japan_unemployment_rate",
-            "type": "quantitative", "title":"Japan unemployment rate (%)"
+            "type": "quantitative", "title":"Japan unemployment rate (%): actual & fitted value"
           },
         "size": {"value": 40},
         "tooltip":[
