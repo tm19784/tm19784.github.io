@@ -117,10 +117,6 @@
       </script>
    </div>
    
-   <div class=“wrap”
-    <p class="rubric-launch"> To view the simple scraper from HTML that was copied from the Yahoo page, click <a class="textLink" href="https://colab.research.google.com/drive/1RsrE0PvQtjlF0W_-yWTzh_txm9PyOnXy?usp=sharing"> here</a>.</p>
-   </div>
-   
    <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 4: evolution of inflation and unemployment rates in more detail:</span></p>
    
    <!--Chart 24: this Trellis chart shows the different annual inflation rates across the last 5 years in the countries making up the scraped data -->
@@ -141,16 +137,6 @@
       </script>
    </div>
 
-   <!-- I managed to get the World Bank API to work and used for loops inside of for loops within Python to produce a data table for these charts; hence I have linked my Google Colaboratory notebook for doing this for inflation below -->
-   <div class=“wrap”
-    <p class="rubric-launch"> To see how I created data tables for this chart with the World Bank API, click <a class="textLink" href="https://colab.research.google.com/drive/15YALJdmshgEoSvaj5BmqnS1BiA-WZk_F?usp=sharing"> here</a>.</p>
-   </div>
-
-   <!-- Minor data-cleaning was required for the World Bank's data when downloading a CSV, hence I have linked my Google Colaboratory notebook for this below -->
-   <div class=“wrap”
-    <p class="rubric-launch"> To see an alternative way to create the data tableS for this chart (i.e., through cleaning a CSV file), click <a class="textLink" href="https://colab.research.google.com/drive/1gbe-_E9JB6-rjfwhbzMZTVwoE7ZfZWCt?usp=sharing"> here</a>.</p>
-   </div>
-
    <p class="weekTitle"><span style="color: rgb(225, 0, 255);">Visualisation(s) 5: do our variables follow similar distributions?</span></p>
    
    <!--Chart 26: this selectable legend chart shows the monthly inflation rates (for countries from the Trellis chart where monthly data is available), as well as cryptocoins' prices, normalised to their Z value over the last 5 years -->
@@ -169,11 +155,6 @@
         var myChart27 = "jsonFolder/unemploymentCoins_normalisation_legend.json";
         vegaEmbed('#chart27', myChart27);
       </script>
-   </div>
-
-   <!-- I had to reorganise my dataset in order to get normalised versions of each variable, hence I have linked my Google Colaboratory notebook for this below -->
-   <div class=“wrap”
-    <p class="rubric-launch"> To see the data-cleaning and manipulation required to normalise each variable, click <a class="textLink" href="https://colab.research.google.com/drive/1oaKjYzvT9edFEifohP9GazXOHHdJXle9?usp=sharing"> here</a>.</p>
    </div>
 
    <!--The following visualisations cover inflation rates of the four countries of interest regressed against two cryptocurrencies, hence yielding 8 charts -->
@@ -326,26 +307,31 @@
       </script>
    </div>
 
-   <!-- I have linked one example of the techniques I used to perform these regressions; this being the regression of Ethereum's price on American unemployment - all the other regressions use the same datasets and are literally a matter of changing one variable; if you would like to review any of the other notebooks please let me know -->
-   <div class=“wrap”
-    <p class="rubric-launch"> To see an example of the data-cleaning and regression techniques used for the 16 different regressions, click <a class="textLink" href="https://colab.research.google.com/drive/1n7RUK5R4gdHicc4kfyp12r_TtAvlOHtE?usp=sharing"> here</a>.</p>
-   </div>
-
-   <p class="weekTitle"><span style="color: rgb(255, 0, 38);">Section 1: the aims of my project:</span></p>
+   <p class="weekTitle"><span style="color: rgb(255, 0, 38);">Section 1: the aims of my project (121 words):</span></p>
   
-   <p class="graphNote"><span style="color: rgb(0, 0, 0);">INSERT PARAGRAPH</span></p>
+   <p class="graphNote"><span style="color: rgb(0, 0, 0);">With many wondering whether cryptocurrencies can become part of everyday life, it is interesting to investigate whether their prices are linked to monetary inflation, as this relationship could provide evidence for cryptocurrencies being an ‘inflation hedge’: something that protects the decreased purchasing power of currencies. In addition, one would also be inclined to investigate whether these cryptocurrencies’ prices are linked to unemployment, to gauge whether people are using cryptocurrency-investing as a job. This project will try to achieve this by: stating the recent evolution of all variables; highlighting the relevant countries to analyse by web-scraping; looking at the variables related to these countries in further detail; seeing if these variables follow similar distributions; and then regressing these variables against each other.</span></p>
 
-   <p class="weekTitle"><span style="color: rgb(255, 0, 38);">Section 2: the data I used, and how this was accessed:</span></p>
+   <p class="weekTitle"><span style="color: rgb(255, 0, 38);">Section 2: the data I used, and how this was accessed (225 words):</span></p>
   
-   <p class="graphNote"><span style="color: rgb(0, 0, 0);">INSERT PARAGRAPH (see an unemployment rate example <a class="textLink" href="https://stats.oecd.org/sdmx-json/data/MEI/DEU+JPN+TUR+USA.LM+LMUNRRTT.MEI+ST.M/all?startTime=2015&endTime=2021&dimensionAtObservation=allDimensions"> here)</a>. The...</span></p>
+   <p class="graphNote"><span style="color: rgb(0, 0, 0);">All of my project’s cryptocurrency data came from the CoinAPI. However, not all currencies of the countries I analysed are available for this API; thus, I used GBP as my currency as the UK was not one of the countries I studied.
+    I used the FRED API for the time-series growth of unemployment and inflation rates in the Euro area. I faced a CORS issue, so used a ‘CORS reverse proxy’; where I URI-encoded the API’s URL, and then put the prefix ‘https://api.allorigins.win/raw?url=’ beforehand, which circumvented the problem by making the system think I was within a browser.
+    For monthly unemployment and inflation rates, I manually retrieved CSV files from the OECD website. This is due to their API only returning data for one of the countries I wanted to analyse (see an unemployment rate example <a class="textLink" href="https://stats.oecd.org/sdmx-json/data/MEI/DEU+JPN+TUR+USA.LM+LMUNRRTT.MEI+ST.M/all?startTime=2015&endTime=2021&dimensionAtObservation=allDimensions"> here)</a>. Yearly unemployment and inflation rates were retrieved from the World Bank API. I show how to do this by using <a class="textLink" href="https://colab.research.google.com/drive/15YALJdmshgEoSvaj5BmqnS1BiA-WZk_F?usp=sharing"> ‘for loops’ inside of ‘for loops’ in Python</a>. Alternatively, one could manually download the World Bank's CSV files and <a class="textLink" href="https://colab.research.google.com/drive/1gbe-_E9JB6-rjfwhbzMZTVwoE7ZfZWCt?usp=sharing"> clean accordingly</a>.
+    The project is replicable due to the data being easily accessible and publicly available. However, as free CoinAPI keys only allow 100 daily requests, projects investigating more cryptocurrencies would either need lots of email addresses or to pay for an API key that allows more daily requests.
+    </span></p>
 
-   <p class="weekTitle"><span style="color: rgb(255, 0, 38);">Section 3: my data-cleaning/analysis challenges, and the tools I used to overcome these:</span></p>
+   <p class="weekTitle"><span style="color: rgb(255, 0, 38);">Section 3: my data-cleaning/analysis challenges, and the tools I used to overcome these (138 words):</span></p>
   
-   <p class="graphNote"><span style="color: rgb(0, 0, 0);">INSERT PARAGRAPH</span></p>
+   <p class="graphNote"><span style="color: rgb(0, 0, 0);">Extra JSON work was done to make ‘month-sliders’ on my graphs, and to format currencies in GBP (an example can be seen <a class="textLink" href="https://github.com/tm19784/tm19784.github.io/blob/main/jsonFolder/projectBTC.json"> here</a>).
+    The Yahoo Finance page had a ‘story continues’ button, and thus I had to use an <a class="textLink" href="https://colab.research.google.com/drive/1RsrE0PvQtjlF0W_-yWTzh_txm9PyOnXy?usp=sharing"> alternative scraping method</a>. However, out of the eleven countries identified from scraping, only four of these had reliable monthly data for both inflation and unemployment. As cryptocurrency data is fairly new, using yearly data would only create five datapoints in a regression, yielding limited statistical power. I therefore chose to omit the other seven countries from my analysis. 
+    I also had to learn how to use pivot tables online when <a class="textLink" href="https://colab.research.google.com/drive/1oaKjYzvT9edFEifohP9GazXOHHdJXle9?usp=sharing"> calculating Z-scores</a>. An example of how I resampled the CoinAPI data, as well as how I made my polynomial regressions interactive in Vega, can be found <a class="textLink" href="https://colab.research.google.com/drive/1n7RUK5R4gdHicc4kfyp12r_TtAvlOHtE?usp=sharing"> here</a>.
+    </span></p>
 
-   <p class="weekTitle"><span style="color: rgb(255, 0, 38);">Section 4: the conclusions of the project:</span></p>
+   <p class="weekTitle"><span style="color: rgb(255, 0, 38);">Section 4: the conclusions of the project (315 words):</span></p>
   
-   <p class="graphNote"><span style="color: rgb(0, 0, 0);">INSERT PARAGRAPH</span></p>
+   <p class="graphNote"><span style="color: rgb(0, 0, 0);">Our time-series’ above show cryptocurrencies’ prices rise/fall at similar times, whereas unemployment and inflation rates amongst the Euro area and our web-scraped countries follow no clear trend. Hence, it would be useful to make these variables Z-standardised, to see whether they even follow similar distributions. These Z-scores signify that the cryptocurrency prices’ distributions match those of inflation rates more closely than unemployment. In addition, both Z-score charts indicate the US rates track these prices closer than any other country’s rates.
+    From looking at the R2 values for a given country-coin regression, inflation-rate regressions always fit the data better than that of unemployment rates. Despite not being an exact science, it suggests a relationship holds for inflation but not unemployment; especially given that many of the inflation-regression best-fit lines show general upward trends, but that of unemployment depicting no general trend. It makes sense that polynomial regressions fit the data best, as cryptocurrencies’ prices are measured much more readily and are thus more volatile, so their relationship with inflation/unemployment is unlikely to move one-to-one. As with the Z-scores, the US has rates that fit the data best. This may be a result of the US being the largest country analysed, so they have the highest absolute number of citizens owning cryptocurrencies.
+    Many of the best-fitting polynomials are virtually straight lines until mid-2020 data. This may show there was no relationship initially, but now that cryptocurrencies are starting to be much more widely used the relationship is starting to form; hence the relationship in 2021 is the one that is the strongest. I believe that this project stimulates further work: as cryptocurrencies become more cemented in society, will the highlighted relationships alternate? And would relationships amongst different cryptocurrencies emerge? To conclude: cryptocurrency-investing is not yet a substitute for employment, but it could be starting to become an inflation wedge, indicating it could eventually be a gold/silver substitute. 
+    </span></p>
 
   </center>
 </body>
