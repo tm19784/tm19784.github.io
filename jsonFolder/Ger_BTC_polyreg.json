@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/csvFolder/Regression_output_Ger_BTC.csv"
+  },
+  "width": 300,
+  "height": 300,
+  "title": {
+    "text": "Bitcoin's price (£) vs. German unemployment (%)",
+    "subtitle": ["Polynomial regression of order 4 to test this relationship", "Sources: CoinApi and OECD"],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "background": "rgba(255, 41, 212, 0.12)",
+  "layer": [
+    {
+      "mark": {"type": "square", "filled": true},
+      "encoding": {
+        "x": {"field": "BTC_closing_price", "type": "quantitative", "title":"Bitcoin closing price (£)"},
+        "y": {
+          "field": "Germany_unemployment_rate",
+          "type": "quantitative", "title":"Germany unemployment rate (%)"
+        },
+      "size": {"value": 40},
+      "tooltip":[
+      {"field":"TIME", "title": "Date", "type":"ordinal" },
+      {"field":"Germany_unemployment_rate", "title": "Unemployment rate (%)", "type": "quantitative", "format":",.1f"},
+      {"field": "BTC_closing_price", "title": "Closing price (£)", "type": "quantitative", "format":",.2f"}
+    ]
+        
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "#008c36"},
+      "encoding": {
+        "x": {"field": "xfit", "type": "quantitative", 
+        "axis": {"grid": false}},
+        "y": {
+          "field": "yfit",
+          "type": "quantitative",
+          "axis": {"grid": false}},
+          "tooltip":[
+      {"field":"xfit", "title": "Fitted value of Bitcoin price (£)", "type": "quantitative", "format":",.2f" },
+      {"field":"yfit", "title": "Fitted value of German unemployment rate (%)","type": "quantitative", "format":",.1f"}
+          ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "BTC_closing_price",
+          "on": "Germany_unemployment_rate",
+          "params": true,
+          "method": "poly",
+          "order": 4
+        },
+        {"calculate": "'R²: '+format(datum.rSquared, '.3f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "#008c36",
+        "x": "width",
+        "align": "right",
+        "y": -7.5
+      },
+      "encoding": {"text": {"type": "nominal", "field": "R2"}}
+    }
+  ]
+}

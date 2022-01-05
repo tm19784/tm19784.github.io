@@ -1,0 +1,46 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+         
+    "title": {
+        "text": "Inflation rates amongst the discussed countries",
+        "subtitle":["CPI; Nigeria is missing 2020 datapoint. Source: World Bank.",""],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+        
+    "data": {
+        "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/csvFolder/worldBankInflationAPI.csv"
+        },
+          
+    "height": 120,
+    "width": 120,   
+    
+    "mark": {   
+            "type":"bar",
+            "strokeWidth":2,
+            "color": "#00ff99"},    
+    
+    "encoding": {
+            "x": {
+                "field": "Year",
+                "type": "temporal",
+                "title":"Yearly observations",
+                "axis":{"grid": false}},
+    
+            "y": {
+                "field": "CPI_inflation_rate",
+                "type": "quantitative",
+                "title": "CPI inflation rate (%)"},
+    
+            "facet": {
+                "field": "Country_name",
+                "columns": 2,
+                "title": null},
+            "tooltip":[
+                    {"field":"CPI", "title": "Inflation rate (%)", "type":"quantitative" }
+             ]
+    },
+  
+    "resolve": {"scale": {"y": "independent", "x": "independent"}}
+  }

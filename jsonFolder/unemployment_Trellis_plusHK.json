@@ -1,0 +1,46 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+         
+    "title": {
+        "text": "Unemployment rates amongst the discussed countries",
+        "subtitle":["Identical format to former Trellis (2015-2020 inclusive); Source: World Bank.",""],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+        
+    "data": {
+        "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/csvFolder/worldBankUnemploymentAPI.csv"
+        },
+       
+    "height": 120,
+    "width": 120,   
+    
+    "mark": {   
+            "type":"bar",
+            "strokeWidth":2,
+            "color": "#d9002f"},    
+    
+    "encoding": {
+            "x": {
+                "field": "Year",
+                "type": "temporal",
+                "title":"Yearly observations",
+                "axis":{"grid": false}},
+    
+            "y": {
+                "field": "Unemployment_rate",
+                "type": "quantitative",
+                "title": "Unemployment rate (%)"},
+    
+            "facet": {
+                "field": "Country_name",
+                "columns": 2,
+                "title": null},
+            "tooltip":[
+                    {"field":"Unemployment", "title": "Unemployment rate (%)", "type":"quantitative" }
+                ]
+    },
+  
+      "resolve": {"scale": {"y": "independent", "x": "independent"}}
+  }

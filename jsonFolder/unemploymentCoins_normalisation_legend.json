@@ -1,0 +1,73 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "title": {
+      "text": "Normally standardised distribution comparison 2",
+      "subtitle":["Comparing unemployment rates with cryptocoins prices", "Legend is clickable to highlight different trends; Sources: coinApi and OECD"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+    "data": 
+      {
+        "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/csvFolder/unemploymentCoins_normalisation.csv",
+        "format": {"type": "csv"}
+      },
+  
+    "height": 300,
+    "width": 300,
+    
+    "mark": {
+      "type": "line"
+    },
+
+    "params": [
+      {
+        "name": "grid",
+        "select": "interval",
+        "bind": "scales"
+        },
+        {
+          "name": "Coin/Country",
+        "select": {"type": "point", "fields": ["Variable"]},
+        "bind": "legend"
+        }
+    ],
+    
+    "encoding": {
+    
+      "x": {
+        "field": "TIME",
+        "type": "temporal",
+        "axis": {
+          "title": "Year (observations on 1st of each month)",
+          "grid": false,
+          "ticks": false
+        }
+      },
+  
+      "y": {
+        "field": "Score",
+        "type": "quantitative",
+        "title": "Normalised Z-score",
+        "axis": {"grid": true}
+      },
+      "color": {
+        "field": "Variable",
+        "type": "nominal",
+        "title": ["Click on the key name to isolate:", "(Scroll and click to zoom in!)"],
+        "legend": {"orient": "top-left"},
+        "scale": {"scheme": "tableau10"}
+        },
+      "opacity": {
+        "condition": {"param": "Coin/Country", "value": 1},
+        "value": 0.2},
+
+      "tooltip":[
+        {"field":"TIME", "title": "Date", "type":"temporal" }, {"field":"Score", "title": "Z-score", "type":"quantitative" }, 
+        {"field":"Variable", "title": "Coin/Country", "type":"nominal" }
+      ]
+    }
+  }
