@@ -38,7 +38,7 @@
                 "columns": 2,
                 "title": null},
             "tooltip":[
-                    {"field":"Unemployment", "title": "Unemployment rate (%)", "type":"quantitative" }
+                    {"field":"Unemployment_rate", "title": "Unemployment rate (%)", "type":"quantitative", "format": ",.1f"}
                 ]
     },
   
