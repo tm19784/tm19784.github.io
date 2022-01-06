@@ -38,7 +38,7 @@
                 "columns": 2,
                 "title": null},
             "tooltip":[
-                    {"field":"CPI_inflation_rate", "title": "Inflation rate (%)", "type":"quantitative" }
+                    {"field":"CPI_inflation_rate", "title": "Inflation rate (%)", "type":"quantitative", "format": ",.1f"}
              ]
     },
   
