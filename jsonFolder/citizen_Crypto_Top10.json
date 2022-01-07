@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Citizens' cryptocurrency ownership: top 11 ",
-    "subtitle": ["Data scraped from Yahoo Finance page","Method copies the useful HTML and uses as raw GitHub link"],
+    "subtitle": ["Data scraped from Yahoo Finance and StatisticsTimes pages","Method copies the useful HTML and uses as raw GitHub link"],
     "subtitleFontSize": 10,
     "anchor": "start",
     "color": "black"
@@ -11,13 +11,35 @@
     "url": "https://raw.githubusercontent.com/tm19784/tm19784.github.io/main/csvFolder/top10_Crypto_Countries.csv",
     "format": {"type": "csv"}
   },
-  "params": [
-      {"name": "highlight", "select": {"type": "point", "on": "mouseover"}
-      }
-  ],
-  
+
   "height": 300,
   "width": 300,
+  "selection": {
+        "Continent": {
+            "type": "single",
+            "fields": [
+                "Continent"
+            ],
+            "bind": {
+                "input": "select",
+                "options": [
+                    null,
+                    "Asia",
+                    "Africa",
+                    "Europe",
+                    "North America",
+                    "South America"
+                ],
+                "name": "Continent:"
+            }
+        }
+    },
+    "transform": [{
+            "filter": {
+                "selection": "Continent"
+            }
+        }
+    ],
   "mark": {"type": "bar", "point": false},
   "encoding": {
     "x": {
@@ -32,15 +54,10 @@
       "title": "Percentage of citizens reporting to own cryptocurrency",
       "axis": {"grid": true}
     },
-    "fillOpacity": {
-      "condition": {"param": "highlight", "value": 1},
-      "value": 0.6
-    },
     "color": {"field": "Continent",
               "scale": {"scheme": "dark2"},
               "legend": {"orient":"top-left"}
               },
-    "opacity": {"value": 0.75},
     "tooltip":[
         {"field":"Citizens (%)", "title": "Citizens (%)", "type":"quantitative" },
         {"field":"Continent", "title": "Continent", "type":"nominal"}
