@@ -21,13 +21,13 @@
   "mark": {"type": "bar", "point": false},
   "encoding": {
     "x": {
-      "field": "0",
+      "field": "Country or Area",
       "type": "nominal",
       "title": "Country",
       "axis": {"grid": false}
     },
     "y": {
-      "field": "1",
+      "field": "Citizens (%)",
       "type": "quantitative",
       "title": "Percentage of citizens reporting to own cryptocurrency",
       "axis": {"grid": true}
@@ -36,10 +36,13 @@
       "condition": {"param": "highlight", "value": 1},
       "value": 0.6
     },
-    "color": {"value": "#00b341"},
+    "color": {"field": "Continent",
+              "scale": {"scheme": "dark2"}
+              },
     "opacity": {"value": 0.75},
     "tooltip":[
-        {"field":"1", "title": "Citizens (%)", "type":"quantitative" }
+        {"field":"Citizens (%)", "title": "Citizens (%)", "type":"quantitative" },
+        {"field":"Continent", "title": "Continent", "type":"nominal"}
       ]
   }
 }
