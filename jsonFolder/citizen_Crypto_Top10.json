@@ -37,7 +37,8 @@
       "value": 0.6
     },
     "color": {"field": "Continent",
-              "scale": {"scheme": "dark2"}
+              "scale": {"scheme": "dark2"},
+              "legend": {"orient":"top-left"}
               },
     "opacity": {"value": 0.75},
     "tooltip":[
