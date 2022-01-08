@@ -1,5 +1,6 @@
 body {
- /* This gives the page a background colour, sets the font, for the page, gives it a border, and sets a colour for all words on the page that have not been given a referenced class. */ 
+ /* This gives the page a background colour, sets the font, for the page, and sets a colour for all words on the page that have not been given a referenced class. */ 
+ /* Lines 4-6 and 13-23 set a changing background colour with a specific length of time to change; this takes inspiration from: 'https://1stwebdesigner.com/15-css-background-effects/'. I played around with the code and altered the animation colours and time. */
   background: linear-gradient(-45deg, #23d5ab, #007fff, #002fff, #2950ff);
 	background-size: 10000% 10000%;
 	animation: gradient 30s ease infinite;
