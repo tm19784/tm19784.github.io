@@ -1,11 +1,11 @@
 body {
  /* This gives the page a background colour, sets the font, for the page, gives it a border, and sets a colour for all words on the page that have not been given a referenced class. */ 
   background: linear-gradient(-45deg, #11ff00, #008c05, #002fff, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
+	background-size: 10000% 10000%;
+	animation: gradient 8s ease infinite;
 	height: 100vh;
-  font-family: Copperplate, Papyrus, fantasy;
-  border: #008080 solid 10px;
+    font-family: Copperplate, Papyrus, fantasy;
+    color: #6495ED;
    margin: auto;
 }
 
