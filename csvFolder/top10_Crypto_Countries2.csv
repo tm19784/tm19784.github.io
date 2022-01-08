@@ -1,0 +1,12 @@
+,Country or Area,Continent,Citizens (%),Monthly
+0,China,Asia,7,NO
+1,Germany,Europe,5,YES
+2,India,Asia,9,NO
+3,Japan,Asia,4,YES
+4,Nigeria,Africa,32,NO
+5,Peru,South America,16,NO
+6,Philippines,Asia,20,NO
+7,Switzerland,Europe,11,NO
+8,Turkey,Asia,16,YES
+9,U.S.,North America,6,YES
+10,Vietnam,Asia,21,NO
