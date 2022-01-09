@@ -7,7 +7,7 @@
     "height": 300,
     "title": {
       "text": "Ethereum's price (£) vs. Turkish unemployment (%)",
-      "subtitle": ["Polynomial regression of order 5 to test this relationship", "Sources: CoinApi and OECD"],
+      "subtitle": ["Polynomial regression of order 5 to test this relationship", "Sources: CoinAPI and OECD"],
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
       "anchor": "start",
