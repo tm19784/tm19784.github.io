@@ -3,7 +3,7 @@
 
   "title": {
     "text": "Normally standardised distribution comparison 1",
-    "subtitle":["Comparing CPI inflation rates with cryptocoins prices", "Legend is clickable to highlight different trends; Sources: coinApi and OECD"],
+    "subtitle":["Comparing CPI inflation rates with cryptocoins prices", "Legend is clickable to highlight different trends; Sources: CoinAPI and OECD"],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
